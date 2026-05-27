@@ -23,6 +23,7 @@ go get -u golang.org/x/crypto/bcrypt
 go get -u github.com/golang-jwt/jwt/v5
 go get -u github.com/joho/godotenv
 ```
+สร้างไฟล์ .env
 *(อย่าลืมตั้งค่า `DATABASE_URL` ในไฟล์ `.env` ให้เรียบร้อย)*
 
 ### Update schema
@@ -49,7 +50,7 @@ npx prisma db push (ใช้ db push จะสะดวกกว่า migrate 
 ### Server
 
 ```bash
-node server.js
+go run main.go
 ```
 
 ### API Endpoints

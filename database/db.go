@@ -21,6 +21,6 @@ func ConnectDB() {
 	log.Println("Database connected successfully!")
 	DB = db
 
-	// Auto Migrate (เหมือน prisma db push) สร้าง/อัปเดตตารางอัตโนมัติ
+	// สร้างตารางอัตโนมัติ
 	db.AutoMigrate(&models.User{})
 }

@@ -21,8 +21,6 @@ go get -u golang.org/x/crypto/bcrypt
 go get -u github.com/golang-jwt/jwt/v5
 go get -u github.com/joho/godotenv
 ```
-สร้างไฟล์ .env
-*(อย่าลืมตั้งค่า `DATABASE_URL` ในไฟล์ `.env` ให้เรียบร้อย)*
 
 ### Environment Variables (.env)
 ```bash
